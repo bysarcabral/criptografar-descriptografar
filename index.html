@@ -1,36 +1,37 @@
 <!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Vamos descriptografar?</title>
-</head>
-<body>
-<div><img class="icon__header" src="./assets/alura-icon.png" alt="Ícone da Alura"></div>
-<div class="conteudo__entrada">
-    <label class="conteudo__entrada__campo">
-        <textarea class="conteudo__entrada__campo__input" placeholder="Digite seu texto"></textarea>
-    </label>
-    <div class="conteudo__entrada__envio">
-        <div class="conteudo__entrada__envio__aviso">
-            <img src="./assets/alerta-icon.png" alt="Ícone de alerta">
-            <p class="aviso__texto">Apenas letras minúsculas e sem acento.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Vamos descriptografar?</title>
+    </head>
+    <body>
+        <div><img class="icon__header" src="./assets/icon-alura.png" alt="Ícone da Alura"></div>
+        <div class="conteudo__entrada">
+            <label class="conteudo__entrada__campo">
+                <textarea rows="10" class="conteudo__entrada__campo__input" placeholder="Digite seu texto"></textarea>
+            </label>
+            <div class="conteudo__entrada__envio">
+                <div class="conteudo__entrada__envio__aviso">
+                    <img src="./assets/alerta-icon.png" alt="Ícone de alerta">
+                    <p class="aviso__texto">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="conteudo__entrada__envio__botoes">
+                    <button class="botao__criptografar ajuste__botoes" id="botao__criptografar" onclick="removerConteudoSaida()">Criptografar</button>
+                    <button class="botao__descriptografar ajuste__botoes" id="botao__descriptografar" onclick="removerConteudoSaida()">Descriptografar</button>
+                </div>
+            </div>
         </div>
-        <div class="conteudo__entrada__envio__botoes">
-            <button class="botao__criptografar ajuste__botoes">Criptografar</button>
-            <button class="botao__descriptografar ajuste__botoes">Descriptografar</button>
+        <div class="conteudo__saida" id="conteudo__saida">
+            <img class="conteudo__saida__imagem" src="./assets/imagem-campo.svg" alt="Pessoa agachada observando com uma lupa um diamante">
+            <div class="conteudo__saida__texto">
+                <p class="saida__texto__titulo">Nenhuma mensagem encontrada</p>
+                <p class="saida__texto__explica">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
         </div>
-    </div>
-</div>
-<div class="conteudo__saida">
-    <img src="./assets/imagem-campo.svg" alt="Pessoa agachada observando com uma lupa um diamante">
-    <div class="conteudo__saida__texto">
-        <p class="saida__texto__titulo">Nenhuma mensagem encontrada</p>
-        <p class="saida__texto__explica">Digite um texto que você deseja criptografar ou descriptografar.</p>
-    </div>
-</div>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
