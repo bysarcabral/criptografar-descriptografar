@@ -20,16 +20,24 @@
                     <p class="aviso__texto">Apenas letras minúsculas e sem acento.</p>
                 </div>
                 <div class="conteudo__entrada__envio__botoes">
-                    <button class="botao__criptografar ajuste__botoes" id="botao__criptografar" onclick="removerConteudoSaida()">Criptografar</button>
-                    <button class="botao__descriptografar ajuste__botoes" id="botao__descriptografar" onclick="removerConteudoSaida()">Descriptografar</button>
+                    <button class="botao__criptografar ajuste__botoes" id="botao__criptografar">Criptografar</button>
+                    <button class="botao__descriptografar ajuste__botoes" id="botao__descriptografar">Descriptografar</button>
                 </div>
             </div>
         </div>
-        <div class="conteudo__saida" id="conteudo__saida">
-            <img class="conteudo__saida__imagem" src="./assets/imagem-campo.svg" alt="Pessoa agachada observando com uma lupa um diamante">
-            <div class="conteudo__saida__texto">
-                <p class="saida__texto__titulo">Nenhuma mensagem encontrada</p>
-                <p class="saida__texto__explica">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <div class="conteudo__saida">
+            <div class="conteudo__saida__inicial" id="conteudo__saida__inicial">
+                <img class="conteudo__saida__inicial__imagem" src="./assets/imagem-campo.svg" alt="Pessoa agachada observando com uma lupa um diamante">
+                <div class="conteudo__saida__inicial__texto">
+                    <p class="saida__inicial__texto__titulo">Nenhuma mensagem encontrada</p>
+                    <p class="saida__inicial__texto__explica">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            <div class="conteudo__saida__dados" id="conteudo__saida__dados">
+                <div class="conteudo__saida__dados__ajuste">
+                    <p class="saida__dados__ajuste__texto" id="saida__dados__ajuste__texto"></p>
+                    <button class="saida__dados__ajuste__botaoCopiar ajuste__botoes">Copiar</button>
+                </div>
             </div>
         </div>
         <script src="script.js"></script>
