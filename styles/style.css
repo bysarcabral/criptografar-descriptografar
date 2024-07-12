@@ -49,6 +49,7 @@ body{
 }
 .conteudo__entrada__campo__input{
     width: 100%;
+    height: 55vh;
 
     border: none;
     outline: none;
@@ -188,6 +189,7 @@ body{
     }
     .conteudo__saida__inicial{
         width: 100%;
+        padding: 32px 0;
     }
     .conteudo__saida__inicial__imagem{
         display: none;
@@ -198,5 +200,14 @@ body{
     .conteudo__entrada__envio__botoes{
         flex-direction: column;
         align-items: center;
+    }
+    .conteudo__saida{
+        padding: 32px 0;
+    }
+    .conteudo__saida__inicial{
+        width: 100%;
+    }
+    .conteudo__saida__dados__ajuste{
+        width: 80%;
     }
 }

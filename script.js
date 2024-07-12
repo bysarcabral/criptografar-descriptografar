@@ -3,9 +3,10 @@ function mudaSaidaInicial() {
     document.getElementById('conteudo__saida__dados').style.display = 'block';
 }
 
-function recebeMensagemInicial(){
+function escutaEventosBotao(){
     document.getElementById('botao__criptografar').addEventListener("click",criptografia);
     document.getElementById('botao__descriptografar').addEventListener("click",descriptografia);
+    document.getElementById('botao__copiar').addEventListener("click",copiaMensagemModificada);
 }
 
 function mostraMensagemModificada(mensagemModificada){
@@ -13,7 +14,13 @@ function mostraMensagemModificada(mensagemModificada){
     return campo__mensagemModificada.innerHTML = mensagemModificada;
 }
 
-recebeMensagemInicial();
+function copiaMensagemModificada(){
+    let mensagemModificada = document.querySelector('.saida__dados__ajuste__texto').value;
+    alert("Boão copiar funcionando");
+    navigator.clipboard.writeText(mensagemModificada);
+}
+
+escutaEventosBotao();
 
 function criptografia(){
     mudaSaidaInicial();
