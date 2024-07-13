@@ -105,7 +105,9 @@ body{
     font-family: var(--fonte-pagina);
     border: 1px solid var(--cor-azul-destaque);
     border-radius: 24px;
+    cursor: pointer;
 }
+
 .conteudo__saida{
     padding: 32px;
     height: 85vh;
@@ -209,5 +211,6 @@ body{
     }
     .conteudo__saida__dados__ajuste{
         width: 80%;
+        padding: 0 10%;
     }
 }
