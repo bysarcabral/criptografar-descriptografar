@@ -15,9 +15,11 @@ function mostraMensagemModificada(mensagemModificada){
 }
 
 function copiaMensagemModificada(){
-    let mensagemModificada = document.querySelector('.saida__dados__ajuste__texto').value;
-    alert("Boão copiar funcionando");
-    navigator.clipboard.writeText(mensagemModificada);
+    let mensagemModificada = document.getElementById("saida__dados__ajuste__texto").innerText;
+    console.log(mensagemModificada);
+    navigator.clipboard.writeText(mensagemModificada)
+        .then(() => console.log("Texto copiado com sucesso!"))
+        .catch(err => console.error("Falha ao copiar o texto:", err));
 }
 
 escutaEventosBotao();
